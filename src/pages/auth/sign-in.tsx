@@ -62,7 +62,6 @@ export function SignIn() {
               <Label htmlFor="email">Seu email</Label>
               <Input id="email" type="email" {...register("email")} />
             </div>
-
             <Button disabled={isSubmitting} className="w-full" type="submit">
               Entrar
             </Button>
