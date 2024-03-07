@@ -78,6 +78,7 @@ export function RevenueChart() {
               type="linear"
               strokeWidth={2}
               dataKey="revenue"
+              name="Receita"
               stroke={colors.violet["500"]}
             />
           </LineChart>
