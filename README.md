@@ -11,6 +11,9 @@ Aplicação para gerenciamento de pedidos de uma pizzaria fictícia
 
 **Front-end:** React, Typescript, TailwindCSS, React-hook-form, Zod
 
+Testes unitários: Vitest
+Testes e2e: Playwright
+
 
 ## Instalação
 
