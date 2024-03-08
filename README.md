@@ -6,3 +6,38 @@ Aplicação para gerenciamento de pedidos de uma pizzaria fictícia
 
 ![image](https://github.com/bduarte10/pizzashop-web/assets/76459023/eb17e5e3-e340-41b8-933c-e25540dfac8f)
 
+
+## Stack utilizada
+
+**Front-end:** React, Typescript, TailwindCSS, React-hook-form, Zod
+
+
+## Instalação
+
+Clone este repositório para o seu ambiente local
+
+Navegue até o diretório do projeto
+
+Execute:
+
+```bash
+  npm install 
+```
+
+    
+## Rodando localmente
+
+Inicie o servidor
+
+```bash
+  npm run dev
+```
+
+
+## Rodando os testes
+
+Para rodar os testes, rode o seguinte comando
+
+```bash
+  npm run test
+```
