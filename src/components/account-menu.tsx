@@ -14,8 +14,11 @@ import { getmanagedrestaurant } from "@/api/get-managed-restaurant";
 import { Skeleton } from "./ui/skeleton";
 import { Dialog, DialogTrigger } from "./ui/dialog";
 import { StoreProfileDialog } from "./store-profile-dialog";
+import { useState } from "react";
 
 export function AccountMenu() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   const { data: profile, isLoading: isLoadingProfile } = useQuery({
     queryKey: ["profile"],
     queryFn: getprofile,
@@ -30,7 +33,7 @@ export function AccountMenu() {
     });
 
   return (
-    <Dialog>
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
@@ -74,7 +77,7 @@ export function AccountMenu() {
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-      <StoreProfileDialog />
+      <StoreProfileDialog setOpen={setIsOpen} />
     </Dialog>
   );
 }
