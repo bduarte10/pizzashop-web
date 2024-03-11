@@ -1,30 +1,46 @@
-# React + TypeScript + Vite
+# Pizza Shop (Em construção)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação para gerenciamento de pedidos de uma pizzaria fictícia
 
-Currently, two official plugins are available:
+![image](https://github.com/bduarte10/pizzashop-web/assets/76459023/cd47a801-a92d-4c91-858c-054a7cd95544)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/bduarte10/pizzashop-web/assets/76459023/eb17e5e3-e340-41b8-933c-e25540dfac8f)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Stack utilizada
 
-- Configure the top-level `parserOptions` property like this:
+**Front-end:** React, Typescript, TailwindCSS, React-query, React-hook-form, Zod<br/>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+**Testes unitários:** Vitest<br/>
+**Testes e2e:** Playwright<br/>
+
+
+## Instalação
+
+Clone este repositório para o seu ambiente local
+
+Navegue até o diretório do projeto
+
+Execute:
+
+```bash
+  npm install 
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+    
+## Rodando localmente
+
+Inicie o servidor
+
+```bash
+  npm run dev
+```
+
+
+## Rodando os testes
+
+Para rodar os testes, rode o seguinte comando
+
+```bash
+  npm run test
+```
