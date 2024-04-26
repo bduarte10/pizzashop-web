@@ -134,7 +134,6 @@ export function StoreProfileDialog({ setOpen }: StoreProfileDialogProps) {
           </DialogClose>
           <Button disabled={isSubmitting} type="submit" variant="success">
             {isSubmitting ? (
-              // spinner
               <div className="flex items-center  gap-2">
                 <div
                   className="inline-block size-4 animate-spin rounded-full border-[3px] border-current border-t-transparent text-slate-200 dark:text-slate-200"
