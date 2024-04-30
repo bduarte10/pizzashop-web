@@ -17,6 +17,10 @@ import { z } from "zod";
 export function Orders() {
   const [searchParams, setSearchParams] = useSearchParams();
 
+  const orderId = searchParams.get("orderId");
+  const customerName = searchParams.get("customerName");
+  const status = searchParams.get("status");
+
   const pageParam = searchParams.get("page");
   const pageIndex =
     pageParam && pageParam !== "0"
@@ -27,8 +31,8 @@ export function Orders() {
       : 0;
 
   const { data: result } = useQuery({
-    queryKey: ["orders", pageIndex],
-    queryFn: () => GetOrders({ pageIndex }),
+    queryKey: ["orders", pageIndex, orderId, customerName, status],
+    queryFn: () => GetOrders({ pageIndex, orderId, customerName, status }),
   });
 
   function handlePaginate(pageIndex: number) {
