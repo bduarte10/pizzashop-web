@@ -18,10 +18,13 @@ interface GetOrderDetailsResponse {
     id: string;
     priceInCents: number;
     quantity: number;
+    product: {
+      name: string;
+    };
   }[];
 }
 
 export async function getOrderDetails({ orderId }: GetOrderDetailsParams) {
-  const response = await api.get<GetOrderDetailsResponse>(`/order${orderId}`);
+  const response = await api.get<GetOrderDetailsResponse>(`/orders/${orderId}`);
   return response.data;
 }
