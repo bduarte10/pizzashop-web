@@ -7,6 +7,8 @@ import { RevenueChart } from "./revenue-chart";
 import { PopularProductsChart } from "./popular-products-chart";
 
 export function Dashboard() {
+  // buscar cookies e redirecionar para o login
+
   return (
     <>
       <Helmet title="Dashboard" />
