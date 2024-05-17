@@ -34,6 +34,7 @@ export function RevenueChart() {
           </CardTitle>
           <CardDescription>Receita diária no período</CardDescription>
         </div>
+        <div></div>
       </CardHeader>
       <CardContent>
         {dailyRevenueInPeriod && (
