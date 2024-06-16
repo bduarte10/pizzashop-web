@@ -33,6 +33,7 @@ describe("Order Status", () => {
     expect(statusText).toBeInTheDocument();
     expect(badge).toHaveClass("bg-amber-500");
   });
+
   it("should render the right text and badge when the status is delivering ", () => {
     const wrapper = render(<OrderStatus status="delivering" />);
     const statusText = wrapper.getByText("Em entrega");
