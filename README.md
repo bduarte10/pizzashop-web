@@ -1,4 +1,4 @@
-# Pizza Shop (Em construção)
+# Pizza Shop
 
 Aplicação para gerenciamento de pedidos de uma pizzaria fictícia
 
